@@ -1,8 +1,3 @@
-// ============================================
-// MOCK DATA — All fake data for charts/UI
-// ============================================
-
-// Disease trend data for line chart (2018–2024)
 export const diseaseTrendData = [
   { year: "2018", COVID: 0, Influenza: 4200, Dengue: 3100, Malaria: 2800, Tuberculosis: 5200 },
   { year: "2019", COVID: 0, Influenza: 3800, Dengue: 4200, Malaria: 2600, Tuberculosis: 4900 },
@@ -13,7 +8,6 @@ export const diseaseTrendData = [
   { year: "2024", COVID: 21000, Influenza: 5100, Dengue: 4600, Malaria: 1800, Tuberculosis: 3200 },
 ];
 
-// Pie chart — disease distribution
 export const diseaseDistribution = [
   { name: "COVID-19", value: 31, color: "#00d4ff" },
   { name: "Influenza", value: 22, color: "#a855f7" },
@@ -22,7 +16,6 @@ export const diseaseDistribution = [
   { name: "Tuberculosis", value: 15, color: "#ff0080" },
 ];
 
-// Monthly cases bar chart
 export const monthlyCases = [
   { month: "Jan", cases: 12400, recovered: 11200, deaths: 340 },
   { month: "Feb", cases: 10800, recovered: 9800, deaths: 280 },
@@ -38,33 +31,30 @@ export const monthlyCases = [
   { month: "Dec", cases: 14800, recovered: 13700, deaths: 390 },
 ];
 
-// Stats cards data
 export const statsData = [
   { label: "Active Cases", value: 2847293, change: -12.4, color: "#00d4ff", icon: "Activity" },
-  { label: "Recovered", value: 18492847, change: +8.7, color: "#00ff88", icon: "Heart" },
+  { label: "Recovered", value: 18492847, change: 8.7, color: "#00ff88", icon: "Heart" },
   { label: "Critical", value: 84729, change: -5.2, color: "#ff6b35", icon: "AlertTriangle" },
   { label: "Deaths", value: 394820, change: -3.1, color: "#ff0080", icon: "TrendingDown" },
 ];
 
-// Heatmap regions data
 export const regionData = [
-  { region: "North America", cases: 4200000, severity: 0.65, lat: 45, lng: -100 },
-  { region: "Europe", cases: 3800000, severity: 0.58, lat: 51, lng: 10 },
-  { region: "Asia Pacific", cases: 8900000, severity: 0.82, lat: 25, lng: 100 },
-  { region: "South America", cases: 2100000, severity: 0.71, lat: -15, lng: -60 },
-  { region: "Africa", cases: 1900000, severity: 0.79, lat: 5, lng: 25 },
-  { region: "Middle East", cases: 980000, severity: 0.62, lat: 25, lng: 45 },
-  { region: "South Asia", cases: 5400000, severity: 0.88, lat: 20, lng: 77 },
-  { region: "Southeast Asia", cases: 3200000, severity: 0.75, lat: 10, lng: 108 },
+  { region: "North America", cases: 4200000, severity: 0.65 },
+  { region: "Europe", cases: 3800000, severity: 0.58 },
+  { region: "Asia Pacific", cases: 8900000, severity: 0.82 },
+  { region: "South America", cases: 2100000, severity: 0.71 },
+  { region: "Africa", cases: 1900000, severity: 0.79 },
+  { region: "Middle East", cases: 980000, severity: 0.62 },
+  { region: "South Asia", cases: 5400000, severity: 0.88 },
+  { region: "Southeast Asia", cases: 3200000, severity: 0.75 },
 ];
 
-// AI Research insights
 export const researchInsights = [
   {
     id: 1,
     title: "COVID-19 Variant Mutation Patterns",
     category: "Virology",
-    summary: "New subvariants show 34% increased transmission but 28% lower hospitalization rates, suggesting evolutionary pressure toward reduced virulence.",
+    summary: "New subvariants show 34% increased transmission but 28% lower hospitalization rates.",
     confidence: 94,
     date: "2024-11-15",
     tags: ["COVID-19", "Mutation", "Epidemiology"],
@@ -74,7 +64,7 @@ export const researchInsights = [
     id: 2,
     title: "AI Predicts Dengue Outbreak Hotspots",
     category: "Predictive Analytics",
-    summary: "Machine learning model achieves 91% accuracy in predicting dengue outbreaks 3 weeks in advance using climate and mobility data.",
+    summary: "Machine learning model achieves 91% accuracy in predicting dengue outbreaks 3 weeks in advance.",
     confidence: 91,
     date: "2024-11-12",
     tags: ["Dengue", "AI", "Prediction"],
@@ -84,7 +74,7 @@ export const researchInsights = [
     id: 3,
     title: "Antimicrobial Resistance Surge",
     category: "Drug Resistance",
-    summary: "WHO reports 18% increase in AMR cases globally. Novel phage therapy trials show 76% efficacy against resistant strains.",
+    summary: "WHO reports 18% increase in AMR cases globally. Novel phage therapy trials show 76% efficacy.",
     confidence: 87,
     date: "2024-11-10",
     tags: ["AMR", "Resistance", "Therapy"],
@@ -94,7 +84,7 @@ export const researchInsights = [
     id: 4,
     title: "Malaria Vaccine Rollout Impact",
     category: "Immunology",
-    summary: "RTS,S vaccine deployment in 12 African nations reduces pediatric malaria cases by 42% in first-year post-rollout analysis.",
+    summary: "RTS,S vaccine deployment reduces pediatric malaria cases by 42% in first-year analysis.",
     confidence: 96,
     date: "2024-11-08",
     tags: ["Malaria", "Vaccine", "Africa"],
@@ -104,7 +94,7 @@ export const researchInsights = [
     id: 5,
     title: "Mental Health Comorbidities Post-COVID",
     category: "Neuropsychiatry",
-    summary: "Long COVID patients show 3.4x higher incidence of anxiety and depression disorders, driving demand for integrated care models.",
+    summary: "Long COVID patients show 3.4x higher incidence of anxiety and depression disorders.",
     confidence: 89,
     date: "2024-11-05",
     tags: ["Long COVID", "Mental Health", "Comorbidity"],
@@ -112,9 +102,9 @@ export const researchInsights = [
   },
   {
     id: 6,
-    title: "Vector Control Innovation: Sterile Insect Technique",
+    title: "Vector Control Innovation",
     category: "Vector Control",
-    summary: "Genetically modified sterile mosquito releases reduce Aedes aegypti populations by 83% in pilot regions across Southeast Asia.",
+    summary: "Sterile mosquito releases reduce Aedes aegypti populations by 83% in pilot regions.",
     confidence: 93,
     date: "2024-11-01",
     tags: ["Dengue", "Mosquito", "Biocontrol"],
@@ -122,13 +112,11 @@ export const researchInsights = [
   },
 ];
 
-// Disease prediction risk factors
 export const riskFactors = [
-  "Diabetes", "Hypertension", "Obesity", "Asthma", "Heart Disease",
-  "Immunocompromised", "Smoking", "Age >60", "None",
+  "Diabetes", "Hypertension", "Obesity", "Asthma",
+  "Heart Disease", "Immunocompromised", "Smoking", "Age >60", "None",
 ];
 
-// Reports data
 export const reportsData = [
   { id: "RPT-001", title: "Global Disease Burden Q4 2024", type: "Quarterly", date: "2024-12-01", size: "4.2 MB", status: "Ready" },
   { id: "RPT-002", title: "AI Prediction Accuracy Report", type: "Monthly", date: "2024-11-28", size: "2.8 MB", status: "Ready" },
